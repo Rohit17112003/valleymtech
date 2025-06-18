@@ -62,7 +62,7 @@ export default function NavigationBar() {
       {/* Main Bar */}
       <div
         id="main-bar"
-        className={`bg-white shadow px-4 md:px-12 py-2.5 flex flex-wrap justify-between items-center transition-all duration-300 ${
+        className={`bg-white shadow px-4 md:px-12 py-2.5 flex md:gap-0 justify-between items-center transition-all duration-300 ${
           isFixed
             ? "fixed top-0 left-0 right-0 z-50"
             : "relative"
@@ -75,21 +75,33 @@ export default function NavigationBar() {
         </Link>
 
         {/* Search Section */}
-        <div className="flex w-full md:w-[800px] mt-2 md:mt-0 md:ml-2">
+        <div className="flex w-[260px] md:w-[800px] mt-2 md:mt-0 md:ml-2">
           <div className="flex-grow text-[0.95rem] w-full md:w-auto">
             <input
               type="text"
               placeholder="Search for items..."
-              className="w-full border border-gray-300 px-4 py-2.5 rounded-l-md"
+              className="w-full border border-gray-300 px-4 md:py-2.5 py-2 rounded-l-md"
             />
           </div>
-          <button className="bg-[#1455ac] text-white text-[1.31rem] px-5 py-3 rounded-r-md">
+          <button className="bg-[#1455ac] text-white md:text-[1.31rem] text-[1.2rem] md:px-5 px-4 md:py-3 py-1 rounded-r-md">
             <LuSearch />
           </button>
+ <div className="md:hidden ml-5 mt-1 z-60">
+        <button
+          onClick={() => setIsOpen(true)}
+          aria-label="Open Menu"
+          className="text-3xl text-[#1455ac]"
+        >
+          <HiOutlineBars3 />
+        </button>
+      </div>
+
         </div>
 
+        
+
         {/* Right Icons */}
-        <div className="flex gap-4 items-center ml-0 md:ml-2 mt-3 md:mt-0">
+        <div className="md:flex gap-4 items-center ml-0 md:ml-2 mt-3 md:mt-0 hidden">
           <span className="bg-blue-50 relative text-[#1455ac] flex items-center justify-center rounded-full h-12 w-12">
             <FiHeart className="text-[1.3rem]" />
             <span className="absolute -top-1.5 -right-1 bg-orange-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
@@ -138,15 +150,7 @@ export default function NavigationBar() {
       </nav>
 
       {/* Mobile Hamburger Icon */}
-      <div className="md:hidden fixed top-[100px] right-5 z-60">
-        <button
-          onClick={() => setIsOpen(true)}
-          aria-label="Open Menu"
-          className="text-3xl text-[#1455ac]"
-        >
-          <HiOutlineBars3 />
-        </button>
-      </div>
+     
 
       {/* Mobile Sidebar */}
       <div
