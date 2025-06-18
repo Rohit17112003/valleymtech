@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#183f56] text-white pt-10">
+    <footer className="bg-[#183f56] text-white md:pt-10 pt-6">
       <div className="md:px-12 px-4 col-span-2 md:col-span-1">
         {/* Top Section */}
         <div className="flex md:flex-row flex-col justify-between gap-6">
@@ -22,7 +22,7 @@ const Footer = () => {
             <Link href="/">
               <img src="/image/k (3).png" alt="6Valley" className="mb-4 w-36" />
             </Link>
-            <h1 className="uppercase font-semibold mt-12 py-2">Download Our App</h1>
+            <h1 className="uppercase font-semibold md:mt-12 mt-4 py-2">Download Our App</h1>
 
             <div className="flex space-x-2">
               <Link href="/">
@@ -94,9 +94,9 @@ const Footer = () => {
 
         <div className="flex flex-row items-center gap-2 md:gap-1 w-full md:text-[1.1rem] text-[1rem] mt-10">
           <span className="pr-1">Start A conversation</span>
-          <hr className="w-20 md:w-96 border-t border-gray-600" />
-          <span className="pl-4 pr-1">Address</span>
-          <hr className="w-20 md:w-80 border-t border-gray-600" />
+          <hr className="w-14 md:w-96 border-t border-gray-600" />
+          <span className="md:pl-4 pl-2 pr-1">Address</span>
+          <hr className="w-14 md:w-80 border-t border-gray-600" />
         </div>
 
         {/* Bottom Section */}

@@ -135,7 +135,7 @@ export default function NavigationBar() {
         <button className="flex items-center gap-4 bg-white text-[#1455ac] text-lg px-6 py-2 rounded-sm font-medium tracking-wider">
           <MdDashboard className="text-[1.3rem] mr-4" />
           Categories
-          <MdArrowDropDown className="ml-5 text-[1.3rem]" />
+          <MdArrowDropDown className="ml-5 text-[1.25rem]" />
         </button>
         <a href="#" className="tracking-wide">Home</a>
         <a href="#" className="tracking-wide">Brand</a>
@@ -170,10 +170,10 @@ export default function NavigationBar() {
         </div>
         {/* Menu Items */}
         <nav className="flex flex-col px-6 space-y-5 text-[1.1rem] font-medium">
-          <button className="flex items-center gap-4 bg-white text-[#1455ac] text-lg px-6 py-2 rounded-sm tracking-wider">
-            <MdDashboard className="text-[1.3rem]" />
+          <button className="flex items-center gap-4 bg-white text-[#1455ac] text-lg w-full  px-2 h-11 rounded-sm tracking-wider">
+            <MdDashboard className="text-[4rem] ml-1" />
             Categories
-            <MdArrowDropDown className="ml-2" />
+            <MdArrowDropDown className="ml-2 text-[4rem]" />
           </button>
           <a href="#" className="hover:underline">Home</a>
           <a href="#" className="hover:underline">Brand</a>
