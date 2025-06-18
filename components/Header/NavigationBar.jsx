@@ -76,17 +76,17 @@ export default function NavigationBar() {
 
         {/* Search Section */}
         <div className="flex w-[260px] md:w-[800px] mt-2 md:mt-0 md:ml-2">
-          <div className="flex text-[0.95rem] w-full md:w-auto">
+          <div className="flex-grow text-[0.95rem] w-full md:w-auto">
             <input
               type="text"
               placeholder="Search for items..."
               className="w-full border border-gray-300 px-4 md:py-2.5 py-1.5 rounded-l-md"
             />
           </div>
-          <button className="bg-[#1455ac] text-white md:text-[1.31rem] text-[1.15rem] md:px-5 px-4 md:py-3  rounded-r-md">
+          <button className="bg-[#1455ac] text-white md:text-[1.31rem] text-[1.15rem] md:px-5 px-4 md:py-3 md:mb-0  mb-1 rounded-r-md">
             <LuSearch />
           </button>
- <div className="md:hidden ml-5 mt-1 z-60">
+ <div className="md:hidden ml-5 z-60 relative mt-1">
         <button
           onClick={() => setIsOpen(true)}
           aria-label="Open Menu"
@@ -135,7 +135,7 @@ export default function NavigationBar() {
         <button className="flex items-center gap-4 bg-white text-[#1455ac] text-lg px-6 py-2 rounded-sm font-medium tracking-wider">
           <MdDashboard className="text-[1.3rem] mr-4" />
           Categories
-          <MdArrowDropDown className="ml-5" />
+          <MdArrowDropDown className="ml-5 text-[1.3rem]" />
         </button>
         <a href="#" className="tracking-wide">Home</a>
         <a href="#" className="tracking-wide">Brand</a>
