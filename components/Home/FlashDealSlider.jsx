@@ -41,7 +41,7 @@ const deals = [
 
 const FlashDealsSlider = () => (
   <div className="px-0 md:px-12 md:pt-4">
-    <div className="relative bg-gray-100 py-10 shadow m:rounded-lg">
+    <div className="relative md:bg-gray-100 py-10 shadow md:rounded-lg">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center px-4 md:px-8">
         {/* Left Section */}
         <div className="bg-blue-600 text-white p-6 rounded-lg h-full hidden md:flex flex-col justify-between">
@@ -79,7 +79,7 @@ const FlashDealsSlider = () => (
                 <img
                   src={deal.imageUrl}
                   alt={deal.title}
-                  className="shadow rounded-md w-full h-auto"
+                  className="md:shadow md:rounded-md"
                 />
                 <h3 className="text-sm font-medium text-black py-2 px-2">
                   {deal.title}
