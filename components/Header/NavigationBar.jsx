@@ -76,14 +76,14 @@ export default function NavigationBar() {
 
         {/* Search Section */}
         <div className="flex w-[260px] md:w-[800px] mt-2 md:mt-0 md:ml-2">
-          <div className="flex-grow text-[0.95rem] w-full md:w-auto">
+          <div className="flex text-[0.95rem] w-full md:w-auto">
             <input
               type="text"
               placeholder="Search for items..."
-              className="w-full border border-gray-300 px-4 md:py-2.5 py-2 rounded-l-md"
+              className="w-full border border-gray-300 px-4 md:py-2.5 py-1.5 rounded-l-md"
             />
           </div>
-          <button className="bg-[#1455ac] text-white md:text-[1.31rem] text-[1.2rem] md:px-5 px-4 md:py-3 py-1 rounded-r-md">
+          <button className="bg-[#1455ac] text-white md:text-[1.31rem] text-[1.15rem] md:px-5 px-4 md:py-3  rounded-r-md">
             <LuSearch />
           </button>
  <div className="md:hidden ml-5 mt-1 z-60">
