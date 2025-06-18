@@ -82,7 +82,7 @@ const deals = [
 ];
 
 const FeaturedSlider = () => (
-  <div className="px-0 md:px-12 md:py-4 -mt-10">
+  <div className="px-0 md:px-12 md:py-4 -mt-7">
     <div className="md:py-6 md:bg-gray-50 bg-white shadow md:rounded-lg px-4 md:px-12">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay]}
@@ -111,10 +111,12 @@ const FeaturedSlider = () => (
               alt={deal.title}
               className="md:rounded-md md:shadow"
             />
-            <h3 className="text-sm font-medium text-black py-2 px-2">
+           <div className="flex flex-col md:items-start items-center -mt-14 md:-mt-0">
+             <h3 className="text-sm font-medium text-black py-2 px-2">
               {deal.title}
             </h3>
-            <p className="text-gray-600 font-semibold px-2">{deal.price}</p>
+            <p className="text-gray-600 font-semibold px-2 pb-10 md:pb-0">{deal.price}</p>
+           </div>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -1,41 +1,41 @@
-'use client';
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+"use client";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const deals = [
   {
-    id: '1',
-    title: 'iPhone 14 Pro Max',
-    price: '$1149.00',
-    imageUrl: '/Assets/slider (4).webp',
+    id: "1",
+    title: "iPhone 14 Pro Max",
+    price: "$1149.00",
+    imageUrl: "/Assets/slider (4).webp",
   },
   {
-    id: '2',
-    title: 'Beauty Jelly Lipstick',
-    price: '$32.00',
-    imageUrl: '/Assets/slider (3).webp',
+    id: "2",
+    title: "Beauty Jelly Lipstick",
+    price: "$32.00",
+    imageUrl: "/Assets/slider (3).webp",
   },
   {
-    id: '3',
-    title: 'Leather Ladies Bag',
-    price: '$15.00',
-    imageUrl: '/Assets/slider (2).webp',
+    id: "3",
+    title: "Leather Ladies Bag",
+    price: "$15.00",
+    imageUrl: "/Assets/slider (2).webp",
   },
   {
-    id: '4',
-    title: 'Samsung S24 Ultra',
-    price: '$1150.00',
-    imageUrl: '/Assets/slider (1).webp',
+    id: "4",
+    title: "Samsung S24 Ultra",
+    price: "$1150.00",
+    imageUrl: "/Assets/slider (1).webp",
   },
   {
-    id: '5',
-    title: 'Smart Watch Bluetooth',
-    price: '$150.00',
-    imageUrl: '/Assets/slider (5).webp',
+    id: "5",
+    title: "Smart Watch Bluetooth",
+    price: "$150.00",
+    imageUrl: "/Assets/slider (5).webp",
   },
 ];
 
@@ -81,12 +81,14 @@ const FlashDealsSlider = () => (
                   alt={deal.title}
                   className="md:shadow md:rounded-md w-full"
                 />
-                <h3 className="text-sm font-medium text-black py-2 px-2">
-                  {deal.title}
-                </h3>
-                <p className="text-gray-600 font-semibold px-2">
-                  {deal.price}
-                </p>
+                <div className="flex flex-col justify-center items-center md:items-start -mt-12 md:-mt-0">
+                  <h3 className="text-sm font-medium text-black py-2 px-2">
+                    {deal.title}
+                  </h3>
+                  <p className="text-gray-600 font-semibold px-2">
+                    {deal.price}
+                  </p>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
