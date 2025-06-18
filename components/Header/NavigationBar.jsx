@@ -83,7 +83,7 @@ export default function NavigationBar() {
               className="w-full border border-gray-300 px-4 md:py-2.5 py-1.5 rounded-l-md"
             />
           </div>
-          <button className="bg-[#1455ac] text-white md:text-[1.31rem] text-[1.15rem] md:px-5 px-4 md:py-3 md:mb-0  mb-1 rounded-r-md">
+          <button className="bg-[#1455ac] text-white md:text-[1.31rem] text-[1.15rem] md:px-5 px-3 md:py-3 md:mb-0  mb-1 rounded-r-md">
             <LuSearch />
           </button>
  <div className="md:hidden ml-5 z-60 relative mt-1">
