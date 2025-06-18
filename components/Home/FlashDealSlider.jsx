@@ -60,7 +60,7 @@ const FlashDealsSlider = () => (
             spaceBetween={16}
             slidesPerView={1.2}
             breakpoints={{
-              480: { slidesPerView: 1.3 },
+              480: { slidesPerView: 1 },
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 4 },
             }}
