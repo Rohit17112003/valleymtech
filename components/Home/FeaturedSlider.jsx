@@ -83,7 +83,7 @@ const deals = [
 
 const FeaturedSlider = () => (
   <div className="px-0 md:px-12 md:py-4 -mt-10">
-    <div className="md:py-6 md:bg-gray-50 shadow md:rounded-lg px-4 md:px-12">
+    <div className="md:py-6 md:bg-gray-50 bg-white shadow md:rounded-lg px-4 md:px-12">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={16}

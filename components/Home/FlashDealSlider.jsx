@@ -41,13 +41,13 @@ const deals = [
 
 const FlashDealsSlider = () => (
   <div className="px-0 md:px-12 md:pt-4">
-    <div className="relative md:bg-gray-100 md:py-10 md:shadow md:rounded-lg">
+    <div className="relative md:bg-gray-100 bg-white md:py-10 md:shadow md:rounded-lg">
       <div className="flex flex-col md:grid md:grid-cols-3 gap-6 items-center px-4 md:px-8">
         {/* Left Section (hidden on small screens) */}
-        <div className="bg-blue-600 text-white p-6 rounded-lg h-full hidden md:flex flex-col justify-between">
+        <div className="bg-blue-600 text-white md:p-6 rounded-lg h-full hidden md:flex md:flex-col justify-between">
           <a
             href="#"
-            className="inline-block bg-white text-blue-600 font-semibold px-4 py-2 rounded hover:bg-blue-100 transition"
+            className="inline-block bg-white text-blue-600 font-semibold md:px-4 py-2 rounded hover:bg-blue-100 transition"
           >
             View All
           </a>
@@ -58,7 +58,7 @@ const FlashDealsSlider = () => (
           <Swiper
             modules={[Navigation, Pagination, A11y, Autoplay]}
             spaceBetween={16}
-            slidesPerView={1.2}
+            slidesPerView={1}
             breakpoints={{
               480: { slidesPerView: 1 },
               640: { slidesPerView: 1 },

@@ -33,7 +33,7 @@ export default function NavigationBar() {
   return (
     <header className="w-full">
       {/* Top Bar */}
-      <div className="bg-gray-50 text-sm  text-black px-4 py-1 flex justify-between items-center md:px-12 md:text-[0.9rem] text-[0.8rem] z-40  top-0 left-0 right-0">
+      <div className="bg-gray-50 text-sm  text-black px-4 py-1 flex justify-between items-center md:px-12 md:text-[0.9rem] text-[0.8rem] z-10  top-0 left-0 right-0">
         <span className="flex gap-1 items-center">
           <span className="md:text-[1rem] text-[0.9rem]">
             <MdLocalPhone />
@@ -63,15 +63,17 @@ export default function NavigationBar() {
       <div
         id="main-bar"
         className={`bg-white shadow px-4 md:px-12 py-2.5 flex md:gap-0 justify-between items-center transition-all duration-300 ${
-          isFixed
-            ? "fixed top-0 left-0 right-0 z-50"
-            : "relative"
+          isFixed ? "fixed top-0 left-0 right-0 z-50" : "relative"
         }`}
         style={{ top: isFixed ? "0" : "auto" }}
       >
         {/* Logo */}
         <Link href="/">
-          <img src="../image/k (2).png" alt="header_logo" className="h-8 md:h-10" />
+          <img
+            src="../image/k (2).png"
+            alt="header_logo"
+            className="h-8 md:h-10"
+          />
         </Link>
 
         {/* Search Section */}
@@ -86,19 +88,16 @@ export default function NavigationBar() {
           <button className="bg-[#1455ac] text-white md:text-[1.31rem] text-[1.15rem] md:px-5 px-3 md:py-3 md:mb-0  mb-1 rounded-r-md">
             <LuSearch />
           </button>
- <div className="md:hidden ml-5 z-60 relative mt-1">
-        <button
-          onClick={() => setIsOpen(true)}
-          aria-label="Open Menu"
-          className="text-3xl text-[#1455ac]"
-        >
-          <HiOutlineBars3 />
-        </button>
-      </div>
-
+          <div className="md:hidden ml-5 z-60 relative mt-1">
+            <button
+              onClick={() => setIsOpen(true)}
+              aria-label="Open Menu"
+              className="text-3xl text-[#1455ac]"
+            >
+              <HiOutlineBars3 />
+            </button>
+          </div>
         </div>
-
-        
 
         {/* Right Icons */}
         <div className="md:flex gap-4 items-center ml-0 md:ml-2 mt-3 md:mt-0 hidden">
@@ -137,20 +136,27 @@ export default function NavigationBar() {
           Categories
           <MdArrowDropDown className="ml-5 text-[1.25rem]" />
         </button>
-        <a href="#" className="tracking-wide">Home</a>
-        <a href="#" className="tracking-wide">Brand</a>
+        <a href="#" className="tracking-wide">
+          Home
+        </a>
+        <a href="#" className="tracking-wide">
+          Brand
+        </a>
         <a href="#" className="tracking-wide">
           Offers <MdArrowDropDown className="inline text-[1.2rem] ml-1" />
         </a>
-        <a href="#" className="tracking-wide">Publication House</a>
-        <a href="#" className="tracking-wide">All Vendors</a>
+        <a href="#" className="tracking-wide">
+          Publication House
+        </a>
+        <a href="#" className="tracking-wide">
+          All Vendors
+        </a>
         <a href="#" className="tracking-wide">
           Vendor Zone <MdArrowDropDown className="inline text-[1.2rem] ml-1" />
         </a>
       </nav>
 
       {/* Mobile Hamburger Icon */}
-     
 
       {/* Mobile Sidebar */}
       <div
@@ -175,15 +181,24 @@ export default function NavigationBar() {
             Categories
             <MdArrowDropDown className="ml-2 text-[4rem]" />
           </button>
-          <a href="#" className="hover:underline">Home</a>
-          <a href="#" className="hover:underline">Brand</a>
+          <a href="#" className="hover:underline">
+            Home
+          </a>
+          <a href="#" className="hover:underline">
+            Brand
+          </a>
           <a href="#" className="hover:underline">
             Offers <MdArrowDropDown className="inline text-[1.2rem] ml-1" />
           </a>
-          <a href="#" className="hover:underline">Publication House</a>
-          <a href="#" className="hover:underline">All Vendors</a>
           <a href="#" className="hover:underline">
-            Vendor Zone <MdArrowDropDown className="inline text-[1.2rem] ml-1" />
+            Publication House
+          </a>
+          <a href="#" className="hover:underline">
+            All Vendors
+          </a>
+          <a href="#" className="hover:underline">
+            Vendor Zone{" "}
+            <MdArrowDropDown className="inline text-[1.2rem] ml-1" />
           </a>
         </nav>
       </div>
