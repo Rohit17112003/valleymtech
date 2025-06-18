@@ -80,7 +80,7 @@ export default function NavigationBar() {
             <input
               type="text"
               placeholder="Search for items..."
-              className="w-full border border-gray-300 px-4 md:py-2.5 py-1.5 rounded-l-md"
+              className="w-full border border-gray-300 px-4 md:py-2.5 py-1.5 rounded-l-md outline-none text-blue-600"
             />
           </div>
           <button className="bg-[#1455ac] text-white md:text-[1.31rem] text-[1.15rem] md:px-5 px-3 md:py-3 md:mb-0  mb-1 rounded-r-md">
