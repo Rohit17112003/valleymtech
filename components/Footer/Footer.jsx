@@ -34,9 +34,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-semibold text-lg mb-3">Quick Links</h3>
+       
+         <div className="flex  md:gap-10 gap-10">
+           <div>
+            <h3 className=" text-lg mb-3 uppercase">Quick Links</h3>
             <ul className="space-y-2 text-gray-300 text-sm font-medium">
               {[
                 "Profile Info",
@@ -53,10 +54,8 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          {/* Other Links */}
           <div className="md:px-24 px-0">
-            <h3 className="font-semibold text-lg mb-3">Other</h3>
+            <h3 className=" text-lg mb-3 uppercase">other</h3>
             <ul className="space-y-2 text-gray-300 text-sm">
               {[
                 "About Us",
@@ -72,11 +71,12 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+         </div>
 
           {/* Newsletter */}
           <div>
-            <h3 className="font-semibold text-lg mb-3">Newsletter</h3>
-            <p className="text-sm md:text-[1rem] md:font-semibold md:mb-2 mb-4 text-white">
+            <h3 className=" text-lg mb-3 uppercase">Newsletter</h3>
+            <p className="text-sm md:text-[1rem] md:font-medium md:mb-2 mb-4 text-white">
               Subscribe to our new channel to get the latest updates
             </p>
             <div className="flex flex-col md:flex-row text-[0.9rem] gap-5 md:gap-0">
@@ -106,16 +106,16 @@ const Footer = () => {
             <div className="text-sm text-white">
               <p className="flex flex-col md:flex-row md:items-center gap-4 pb-9">
                 <span className="flex items-center gap-2">
-                  <MdLocalPhone className="text-[1rem] md:mt-0 mt-6" /> +00xxxxxxxxxxxx
+                  <MdLocalPhone className="text-[1rem] " /> +00xxxxxxxxxxxx
                 </span>
                 <span className="flex items-center gap-2">
                   <IoMdMail className="text-[1.1rem]" /> c*********@6amtech.com
                 </span>
                 <span className="flex items-center gap-2">
-                  <HiOutlineUser className="text-[1.7rem]" /> Support Ticket Address
+                  <HiOutlineUser className="md:text-[1.2rem] text-[1.1rem]" /> Support Ticket Address
                 </span>
                 <span className="flex items-center gap-2">
-                  <FaMapMarkerAlt className="text-[0.9rem]" /> Kingston, New York 12401 United States
+                  <FaMapMarkerAlt className="text-[0.9rem] md:ml-10" /> Kingston, New York 12401 United States
                 </span>
               </p>
             </div>
