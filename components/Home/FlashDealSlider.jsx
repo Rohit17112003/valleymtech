@@ -42,7 +42,7 @@ const deals = [
 const FlashDealsSlider = () => (
   <div className="px-0 md:px-12 md:pt-4">
     <div className="relative md:bg-gray-100 md:py-10 md:shadow md:rounded-lg">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center px-4 md:px-8">
+      <div className="flex flex-col md:grid grid-cols-1 md:grid-cols-3 gap-6 items-center px-4 md:px-8">
         {/* Left Section */}
         <div className="bg-blue-600 text-white p-6 rounded-lg h-full hidden md:flex flex-col justify-between">
           <a
