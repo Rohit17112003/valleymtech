@@ -61,7 +61,7 @@ const FlashDealsSlider = () => (
             slidesPerView={1.2}
             breakpoints={{
               480: { slidesPerView: 1 },
-              640: { slidesPerView: 2 },
+              640: { slidesPerView: 1 },
               1024: { slidesPerView: 4 },
             }}
             loop={true}

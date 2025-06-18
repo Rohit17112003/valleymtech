@@ -82,7 +82,7 @@ const deals = [
 ];
 
 const FeaturedSlider = () => (
-  <div className="px-0 md:px-12 md:py-4">
+  <div className="px-0 md:px-12 md:py-4 -mt-10">
     <div className="md:py-6 md:bg-gray-50 shadow md:rounded-lg px-4 md:px-12">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay]}
@@ -96,7 +96,7 @@ const FeaturedSlider = () => (
         }}
         breakpoints={{
           480: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
+          640: { slidesPerView: 1 },
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 6 },
         }}
