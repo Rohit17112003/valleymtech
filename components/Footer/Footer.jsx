@@ -92,9 +92,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-row items-center gap-2 md:gap-1 w-full md:text-[1.1rem] text-[1rem] mt-10">
+        <div className="flex flex-row items-center justify-between md:justify-start gap-2 md:gap-1 w-full md:text-[1.1rem] text-[1rem] mt-10">
           <span className="pr-1">Start A conversation</span>
-          <hr className="w-14 md:w-96 border-t border-gray-600" />
+          <hr className="w-16 md:w-96 border-t border-gray-600" />
           <span className="md:pl-4 pl-2 pr-1">Address</span>
           <hr className="w-14 md:w-80 border-t border-gray-600" />
         </div>

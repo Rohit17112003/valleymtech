@@ -76,7 +76,7 @@ export default function NavigationBar() {
 
         {/* Search Section */}
         <div className="flex w-[260px] md:w-[800px] mt-2 md:mt-0 md:ml-2">
-          <div className="flex-grow text-[0.95rem] w-full md:w-auto">
+          <div className="flex-grow text-[0.96rem] w-full md:w-auto">
             <input
               type="text"
               placeholder="Search for items..."
