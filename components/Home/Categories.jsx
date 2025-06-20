@@ -38,9 +38,9 @@ const Categories = () => {
   ];
   return (
     <>
-      <div className="px-4 md:px-12 pb-4">
+      <div className="px-0 md:px-12 pb-4">
         <div className="pb-10 pt-8 mt-2 bg-white shadow rounded-lg px-4">
-          <div className="text-blue-600 flex justify-between items-center py-4">
+          <div className="text-blue-600 flex justify-between items-center relative -top-5 md:-top-0 py-4">
             <h1 className="text-black text-[1.4rem]">Categories</h1>
 
             <p className=" cursor-pointer justify-end text-blue-800 md:text-[0.95rem] text-[0.9rem] flex items-center gap-2 ">

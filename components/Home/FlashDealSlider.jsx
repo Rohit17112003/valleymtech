@@ -42,15 +42,15 @@ const deals = [
 ];
 
 const FlashDealsSlider = () => (
-  <div className="px-0 md:mt-4 md:px-12 ">
+  <div className="px-4 md:mt-4 md:px-12 ">
     <div className="relative md:bg-gray-100 bg-white md:pb-10  md:shadow md:rounded-lg">
-      <h1 className=" cursor-pointer justify-end text-blue-800 md:text-[0.95rem] md:py-6   md:pr-4 text-[0.9rem] flex items-center gap-2 ">
+      <h1 className="relative top-10 md:top-0 z-10 cursor-pointer justify-end text-blue-800 md:text-[0.95rem] md:py-6   md:pr-4 text-[0.9rem] flex items-center gap-2 ">
         View All <SlArrowRight className="text-[0.75rem]" />
       </h1>
 
       <div className="flex flex-col md:grid md:grid-cols-3 gap-6 items-center px-4 md:px-8">
         {/* Left Section (hidden on small screens) */}
-        <div className=" relative">
+        <div className=" relative hidden md:block">
           <h1 className="text-blue-800 font-bold text-[1.2rem] md:text-[1.7rem] -mt-24 uppercase ">
             Flash Deal
           </h1>

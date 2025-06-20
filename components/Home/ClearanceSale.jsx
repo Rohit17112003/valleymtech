@@ -54,15 +54,15 @@ const deals = [
 ];
 
 const ClearanceSale = () => (
-  <div className="px-0 md:px-12 md:py-4 -mt-7 md:-mt-0">
-    <div className="md:pb-6 bg-white md:bg-gray-100 shadow md:rounded-lg px-4 md:px-12">
-      <div className="flex justify-between pt-5">
+  <div className="px-4 md:px-12 md:py-4 -mt-7 md:-mt-0">
+    <div className="md:pb-6 bg-white md:bg-gray-100 md:shadow md:rounded-lg  md:px-12">
+      <div className="flex justify-between md:pt-5 pt-16">
         <span className="relative ">
         <p className=" absolute text-blue-900 top-6 left-10 font-bold text-[0.75rem]">Save More</p>
         <p className=" absolute text-white font-bold top-12 left-4 text-[1.15rem]">Clearance Sale</p>
          <img src="../image/title.svg" alt="title" className="h-20"/>
         </span>
-        <h1 className="cursor-pointer -mr-6 text-blue-800 md:text-[0.95rem] text-[0.9rem]  flex items-center gap-2 ">
+        <h1 className="cursor-pointer md:-mr-6 -mr-0 relative top-7 md:top-0 text-blue-800 md:text-[0.95rem] text-[0.9rem]  flex items-center gap-2 ">
           View All <SlArrowRight className="text-[0.75rem]" />
         </h1>
       </div>
@@ -88,7 +88,7 @@ const ClearanceSale = () => (
       >
         {deals.map((deal) => (
           <SwiperSlide key={deal.id}>
-            <div className="flex flex-col items-center gap-2 bg-white rounded-md relative py-2">
+            <div className="flex flex-col items-center gap-2 bg-white shadow-md mt-8 md:mt-0 shaodw-gray-300 rounded-md relative py-2">
               <button className=" left-2 absolute z-50 bg-blue-500 text-white rounded-md px-2 py-1 text-[0.8rem]">
                 {deal.price}
               </button>
@@ -111,7 +111,7 @@ const ClearanceSale = () => (
       </Swiper>
     </div>
     <Link href="https://codecanyon.net/item/6valley-multivendor-ecommerce-complete-ecommerce-mobile-app-web-and-admin-panel/31448597?s_rank=1">
-    <img src="../image/dive.webp" alt="dive" className="rounded-md mt-14"/>
+    <img src="../image/dive.webp" alt="dive" className="rounded-md md:mt-8 mt-0 mb-4 "/>
     </Link>
   </div>
 );

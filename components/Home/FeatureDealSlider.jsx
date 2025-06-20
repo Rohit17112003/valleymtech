@@ -59,8 +59,8 @@ const deals = [
 ];
 
 const FeatureDealSlider = () => (
-  <div className="px-0 md:px-12 md:py-4 -mt-7 md:-mt-0">
-    <div className="md:pb-6 bg-white md:bg-gray-100 shadow md:rounded-lg px-4 md:px-12">
+  <div className="px-1 md:px-12 md:py-4 -mt-7 md:-mt-0">
+    <div className="md:pb-6 bg-white md:bg-gray-100 md:shadow md:rounded-lg px-4 md:px-12">
       <div className="flex justify-between pt-5">
         <span>
           {" "}
@@ -69,7 +69,7 @@ const FeatureDealSlider = () => (
           </h1>
           <p>See the latest deals and exciting new offers!</p>
         </span>
-        <h1 className="cursor-pointer -mr-6 text-blue-800 md:text-[0.95rem] text-[0.9rem]  flex items-center gap-2 ">
+        <h1 className="cursor-pointer hidden -mr-6 text-blue-800 md:text-[0.95rem] text-[0.9rem]  md:flex items-center gap-2 ">
           View All <SlArrowRight className="text-[0.75rem]" />
         </h1>
       </div>
@@ -91,11 +91,11 @@ const FeatureDealSlider = () => (
         }}
         navigation
         pagination={{ clickable: true }}
-        className="px-6 mt-4"
+        className="px-6 md:mt-4 mt-6"
       >
         {deals.map((deal) => (
           <SwiperSlide key={deal.id}>
-            <div className="flex flex-row gap-2 bg-white rounded-md relative px-6 py-2">
+            <div className="flex flex-row gap-2 bg-white shadow-md md:shadow shadow-gray-300 rounded-md relative px-6 py-2">
               <button className=" left-2 absolute z-50 bg-blue-500 text-white rounded-md px-2 py-1 text-[0.8rem]">
                 {deal.price}
               </button>
