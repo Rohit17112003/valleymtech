@@ -9,6 +9,7 @@ import { BiLogoQuora } from "react-icons/bi";
 import { AiFillGooglePlusSquare } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
 import { RiTwitterXFill } from "react-icons/ri";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -20,16 +21,16 @@ const Footer = () => {
           {/* Logo & App Downloads */}
           <div>
             <Link href="/">
-              <img src="/image/k (3).png" alt="6Valley" className="mb-4 w-36" />
+              <Image src="/image/k (3).png" alt="6Valley" className="mb-4 w-36" />
             </Link>
             <h1 className="uppercase font-semibold md:mt-12 mt-4 py-2">Download Our App</h1>
 
             <div className="flex space-x-2">
               <Link href="/">
-                <img src="/image/k (5).png" alt="App Store" className="w-32 h-11" />
+                <Image src="/image/k (5).png" alt="App Store" className="w-32 h-11" />
               </Link>
               <Link href="/">
-                <img src="/image/k (4).png" alt="Google Play" className="w-32 h-11" />
+                <Image src="/image/k (4).png" alt="Google Play" className="w-32 h-11" />
               </Link>
             </div>
           </div>

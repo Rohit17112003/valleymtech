@@ -3,6 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import { SlArrowRight } from "react-icons/sl";
+import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -132,7 +133,7 @@ const FlashDealsSlider = () => (
           >
             {deals.map((deal) => (
               <SwiperSlide key={deal.id}>
-                <img
+                <Image
                   src={deal.imageUrl}
                   alt={deal.title}
                   className="md:shadow md:rounded-md w-full transition-transform hover:scale-90  duration-300 cursor-pointer"

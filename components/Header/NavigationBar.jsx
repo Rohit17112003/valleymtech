@@ -7,6 +7,7 @@ import { FaUserLarge } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NavigationBar() {
   const [isFixed, setIsFixed] = useState(false);
@@ -56,7 +57,7 @@ export default function NavigationBar() {
       >
         {/* Logo */}
         <Link href="/">
-          <img src="../image/k (2).png" alt="header_logo" className="h-8 md:h-10" />
+          <Image src="../image/k (2).png" alt="header_logo" className="h-8 md:h-10" />
         </Link>
 
         {/* Search */}

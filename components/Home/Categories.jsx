@@ -1,5 +1,6 @@
 import React from "react";
 import { SlArrowRight } from "react-icons/sl";
+import Image from "next/image";
 
 const Categories = () => {
   const data = [
@@ -49,8 +50,8 @@ const Categories = () => {
           </div>
           <div className="flex flex-wrap flex-row px-4  justify-between  gap-10 ">
             {data.map((items, index) => (
-              <div>
-                <img src={items.img} alt="items" className="w-28 hover:scale-90 cursor-pointer  transition-transform duration-300" />
+              <div key={index}>
+                <Image src={items.img} alt="items" className="w-28 hover:scale-90 cursor-pointer  transition-transform duration-300" />
                 <h1 className="py-4">{items.titile}</h1>
               </div>
             ))}

@@ -6,6 +6,7 @@ import { SlArrowRight } from "react-icons/sl";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const deals = [
   {
@@ -109,7 +110,7 @@ const FeaturedSlider = () => (
       >
         {deals.map((deal) => (
           <SwiperSlide key={deal.id}>
-            <img
+            <Image
               src={deal.imageUrl}
               alt={deal.title}
               className="md:rounded-md md:shadow transition-transform hover:scale-90 duration-500 cursor-pointer"

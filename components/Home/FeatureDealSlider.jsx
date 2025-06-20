@@ -6,6 +6,7 @@ import { SlArrowRight } from "react-icons/sl";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const deals = [
   {
@@ -99,7 +100,7 @@ const FeatureDealSlider = () => (
               <button className=" left-2 absolute z-50 bg-blue-500 text-white rounded-md px-2 py-1 text-[0.8rem]">
                 {deal.price}
               </button>
-              <img
+              <Image
                 src={deal.imageUrl}
                 alt={deal.title}
                 className=" w-28 z-10 rounded-l-md transition-transform hover:scale-110 duration-500 cursor-pointer"

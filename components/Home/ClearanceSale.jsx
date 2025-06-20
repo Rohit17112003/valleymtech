@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Link from "next/link";
+import Image from "next/image";
 
 const deals = [
   {
@@ -60,7 +61,7 @@ const ClearanceSale = () => (
         <span className="relative ">
         <p className=" absolute text-blue-900 top-6 left-10 font-bold text-[0.75rem]">Save More</p>
         <p className=" absolute text-white font-bold top-12 left-4 text-[1.15rem]">Clearance Sale</p>
-         <img src="../image/title.svg" alt="title" className="h-20"/>
+         <Image src="../image/title.svg" alt="title" className="h-20"/>
         </span>
         <h1 className="cursor-pointer md:-mr-6 -mr-0 relative top-7 md:top-0 text-blue-800 md:text-[0.95rem] text-[0.9rem]  flex items-center gap-2 ">
           View All <SlArrowRight className="text-[0.75rem]" />
@@ -92,7 +93,7 @@ const ClearanceSale = () => (
               <button className=" left-2 absolute z-50 bg-blue-500 text-white rounded-md px-2 py-1 text-[0.8rem]">
                 {deal.price}
               </button>
-              <img
+              <Image
                 src={deal.imageUrl}
                 alt={deal.title}
                 className=" w-40 z-10 rounded-l-md transition-transform hover:scale-110 duration-500 mt-4 cursor-pointer"
@@ -111,7 +112,7 @@ const ClearanceSale = () => (
       </Swiper>
     </div>
     <Link href="https://codecanyon.net/item/6valley-multivendor-ecommerce-complete-ecommerce-mobile-app-web-and-admin-panel/31448597?s_rank=1">
-    <img src="../image/dive.webp" alt="dive" className="rounded-md md:mt-8 mt-0 mb-4 "/>
+    <Image src="../image/dive.webp" alt="dive" className="rounded-md md:mt-8 mt-0 mb-4 "/>
     </Link>
   </div>
 );
