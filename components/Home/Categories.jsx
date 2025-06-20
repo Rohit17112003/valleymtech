@@ -5,35 +5,35 @@ import Image from "next/image";
 const Categories = () => {
   const data = [
     {
-      img: "../Assets/categories (1).webp",
+      img: "/Assets/categories (1).webp",
       titile: "Man's Fashion",
     },
     {
-      img: "../Assets/categories (2).webp",
+      img: "/Assets/categories (2).webp",
       titile: "Man's Fashion",
     },
     {
-      img: "../Assets/categories (3).webp",
+      img: "/Assets/categories (3).webp",
       titile: "Man's Fashion",
     },
     {
-      img: "../Assets/categories (4).webp",
+      img: "/Assets/categories (4).webp",
       titile: "Man's Fashion",
     },
     {
-      img: "../Assets/categories (5).webp",
+      img: "/Assets/categories (5).webp",
       titile: "Man's Fashion",
     },
     {
-      img: "../Assets/categories (6).webp",
+      img: "/Assets/categories (6).webp",
       titile: "Man's Fashion",
     },
     {
-      img: "../Assets/categories (7).webp",
+      img: "/Assets/categories (7).webp",
       titile: "Man's Fashion",
     },
     {
-      img: "../Assets/categories (8).webp",
+      img: "/Assets/categories (8).webp",
       titile: "Man's Fashion",
     },
   ];
@@ -51,7 +51,13 @@ const Categories = () => {
           <div className="flex flex-wrap flex-row px-4  justify-between  gap-10 ">
             {data.map((items, index) => (
               <div key={index}>
-                <Image src={items.img} alt="items" className="w-28 hover:scale-90 cursor-pointer  transition-transform duration-300" />
+  <Image
+  src={items.img}
+  alt="items"
+  width={112}
+  height={112}
+  className="hover:scale-90 cursor-pointer transition-transform duration-300"
+/>
                 <h1 className="py-4">{items.titile}</h1>
               </div>
             ))}

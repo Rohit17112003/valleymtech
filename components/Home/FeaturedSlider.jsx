@@ -110,11 +110,13 @@ const FeaturedSlider = () => (
       >
         {deals.map((deal) => (
           <SwiperSlide key={deal.id}>
-            <Image
-              src={deal.imageUrl}
-              alt={deal.title}
-              className="md:rounded-md md:shadow transition-transform hover:scale-90 duration-500 cursor-pointer"
-            />
+           <Image
+  src={deal.imageUrl}
+  alt={deal.title}
+  width={400}         // set real width
+  height={300}        // set real height
+  className="md:rounded-md md:shadow transition-transform hover:scale-90 duration-500 cursor-pointer"
+/>
            <div className="flex flex-col md:items-start items-center -mt-14 md:mt-0">
              <h3 className="text-sm font-medium text-black py-2 px-2">
               {deal.title}

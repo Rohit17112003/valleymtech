@@ -21,16 +21,34 @@ const Footer = () => {
           {/* Logo & App Downloads */}
           <div>
             <Link href="/">
-              <Image src="/image/k (3).png" alt="6Valley" className="mb-4 w-36" />
+             <Image
+  src="/image/k (3).png"
+  alt="6Valley"
+  width={144}
+  height={80} // adjust based on actual image ratio
+  className="mb-4"
+/>
             </Link>
             <h1 className="uppercase font-semibold md:mt-12 mt-4 py-2">Download Our App</h1>
 
             <div className="flex space-x-2">
               <Link href="/">
-                <Image src="/image/k (5).png" alt="App Store" className="w-32 h-11" />
+           <Image
+  src="/image/k (5).png"
+  alt="App Store"
+  width={128}
+  height={44}
+  className="rounded-sm"
+/>
               </Link>
               <Link href="/">
-                <Image src="/image/k (4).png" alt="Google Play" className="w-32 h-11" />
+               <Image
+  src="/image/k (4).png"
+  alt="Goggole Play"
+  width={128}
+  height={44}
+  className="rounded-sm"
+/>
               </Link>
             </div>
           </div>

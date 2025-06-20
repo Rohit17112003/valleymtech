@@ -133,11 +133,12 @@ const FlashDealsSlider = () => (
           >
             {deals.map((deal) => (
               <SwiperSlide key={deal.id}>
-                <Image
-                  src={deal.imageUrl}
-                  alt={deal.title}
-                  className="md:shadow md:rounded-md w-full transition-transform hover:scale-90  duration-300 cursor-pointer"
-                />
+    <Image
+    src={deal.imageUrl}
+    alt={deal.title}
+    fill
+    className="md:shadow md:rounded-md object-cover transition-transform hover:scale-90 duration-300 cursor-pointer"
+  />
                 <div className="flex flex-col justify-center items-center md:items-start -mt-12 md:-mt-0">
                   <h3 className="text-sm font-medium text-black py-2 px-2">
                     {deal.title}

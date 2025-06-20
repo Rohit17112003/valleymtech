@@ -57,7 +57,14 @@ export default function NavigationBar() {
       >
         {/* Logo */}
         <Link href="/">
-          <Image src="../image/k (2).png" alt="header_logo" className="h-8 md:h-10" />
+          <Image
+            src="/image/k (2).png"
+            alt="header_logo"
+            width={100}
+            height={40}
+            priority
+            className="h-8 md:h-10"
+          />
         </Link>
 
         {/* Search */}
@@ -72,7 +79,10 @@ export default function NavigationBar() {
           </button>
           {/* Hamburger Icon */}
           <div className="md:hidden mt-1 relative z-[9999]">
-            <button onClick={() => setIsOpen(true)} className="text-3xl text-[#1455ac]">
+            <button
+              onClick={() => setIsOpen(true)}
+              className="text-3xl text-[#1455ac]"
+            >
               <HiOutlineBars3 />
             </button>
           </div>
@@ -115,10 +125,14 @@ export default function NavigationBar() {
         </button>
         <a href="#">Home</a>
         <a href="#">Brand</a>
-        <a href="#">Offers <MdArrowDropDown className="inline text-[1.2rem] ml-1" /></a>
+        <a href="#">
+          Offers <MdArrowDropDown className="inline text-[1.2rem] ml-1" />
+        </a>
         <a href="#">Publication House</a>
         <a href="#">All Vendors</a>
-        <a href="#">Vendor Zone <MdArrowDropDown className="inline text-[1.2rem] ml-1" /></a>
+        <a href="#">
+          Vendor Zone <MdArrowDropDown className="inline text-[1.2rem] ml-1" />
+        </a>
       </nav>
 
       {/* Backdrop Overlay */}
@@ -147,10 +161,15 @@ export default function NavigationBar() {
           </button>
           <a href="#">Home</a>
           <a href="#">Brand</a>
-          <a href="#">Offers <MdArrowDropDown className="inline text-[1.2rem] ml-1" /></a>
+          <a href="#">
+            Offers <MdArrowDropDown className="inline text-[1.2rem] ml-1" />
+          </a>
           <a href="#">Publication House</a>
           <a href="#">All Vendors</a>
-          <a href="#">Vendor Zone <MdArrowDropDown className="inline text-[1.2rem] ml-1" /></a>
+          <a href="#">
+            Vendor Zone{" "}
+            <MdArrowDropDown className="inline text-[1.2rem] ml-1" />
+          </a>
         </nav>
       </div>
     </header>

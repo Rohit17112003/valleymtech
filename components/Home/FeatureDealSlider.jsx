@@ -100,11 +100,13 @@ const FeatureDealSlider = () => (
               <button className=" left-2 absolute z-50 bg-blue-500 text-white rounded-md px-2 py-1 text-[0.8rem]">
                 {deal.price}
               </button>
-              <Image
-                src={deal.imageUrl}
-                alt={deal.title}
-                className=" w-28 z-10 rounded-l-md transition-transform hover:scale-110 duration-500 cursor-pointer"
-              />
+  <Image
+  src={deal.imageUrl}
+  alt={deal.title}
+  width={112}   // w-28 = 112px
+  height={112}  // adjust as needed
+  className="z-10 rounded-l-md transition-transform hover:scale-110 duration-500 cursor-pointer"
+/>
               <div className="">
                 <h3 className="text-sm font-medium text-black py-2 px-2">
                   {deal.title}
