@@ -2,6 +2,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+import { SlArrowRight } from "react-icons/sl";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -82,8 +83,10 @@ const deals = [
 ];
 
 const FeaturedSlider = () => (
-  <div className="px-0 md:px-12 md:py-4 -mt-7">
-    <div className="md:py-6 md:bg-gray-50 bg-white shadow md:rounded-lg px-4 md:px-12">
+  <div className="px-0 md:px-12 md:py-4 -mt-7 md:-mt-0">
+    <div className="md:pb-6 bg-white shadow md:rounded-lg px-4 md:px-12">
+    <h1 className="text-center text-blue-800 md:text-[1.4rem] text-[1.1rem] pt-4  font-bold">Featured products</h1>
+    <h1 className=" cursor-pointer justify-end -mr-6 text-blue-800 md:text-[0.95rem] text-[0.9rem] pt-4 flex items-center gap-2 ">View All <SlArrowRight className="text-[0.75rem]"/></h1>
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={16}
@@ -109,9 +112,9 @@ const FeaturedSlider = () => (
             <img
               src={deal.imageUrl}
               alt={deal.title}
-              className="md:rounded-md md:shadow"
+              className="md:rounded-md md:shadow transition-transform hover:scale-90 duration-500 cursor-pointer"
             />
-           <div className="flex flex-col md:items-start items-center -mt-14 md:-mt-0">
+           <div className="flex flex-col md:items-start items-center -mt-14 md:mt-0">
              <h3 className="text-sm font-medium text-black py-2 px-2">
               {deal.title}
             </h3>

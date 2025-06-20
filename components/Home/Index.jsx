@@ -2,13 +2,18 @@
 import Hero from "./Hero";
 import FlashDealsSlider from "./FlashDealSlider";
 import FeaturedSlider from "./FeaturedSlider";
-
+import Categories from "./Categories";
+import FeatureDealSlider from "./FeatureDealSlider";
+import ClearanceSale from "./ClearanceSale";
 const MainHomePage = () => {
   const design = (
     <>
       <Hero />
     <FlashDealsSlider/>
     <FeaturedSlider/>
+    <Categories/>
+    <FeatureDealSlider/>
+    <ClearanceSale/>
     </>
   );
   return design;

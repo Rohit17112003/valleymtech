@@ -2,6 +2,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+import { SlArrowRight } from "react-icons/sl";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -40,17 +42,71 @@ const deals = [
 ];
 
 const FlashDealsSlider = () => (
-  <div className="px-0 md:px-12 md:pt-4">
-    <div className="relative md:bg-gray-100 bg-white md:py-10 md:shadow md:rounded-lg">
+  <div className="px-0 md:mt-4 md:px-12 ">
+    <div className="relative md:bg-gray-100 bg-white md:pb-10  md:shadow md:rounded-lg">
+      <h1 className=" cursor-pointer justify-end text-blue-800 md:text-[0.95rem] md:py-6   md:pr-4 text-[0.9rem] flex items-center gap-2 ">
+        View All <SlArrowRight className="text-[0.75rem]" />
+      </h1>
+
       <div className="flex flex-col md:grid md:grid-cols-3 gap-6 items-center px-4 md:px-8">
         {/* Left Section (hidden on small screens) */}
-        <div className="bg-blue-600 text-white md:p-6 rounded-lg h-full hidden md:flex md:flex-col justify-between">
-          <a
-            href="#"
-            className="inline-block bg-white text-blue-600 font-semibold md:px-4 py-2 rounded hover:bg-blue-100 transition"
-          >
-            View All
-          </a>
+        <div className=" relative">
+          <h1 className="text-blue-800 font-bold text-[1.2rem] md:text-[1.7rem] -mt-24 uppercase ">
+            Flash Deal
+          </h1>
+          <p className="text-blue-700 text-[0.9rem] md:text-[1.05rem]">
+            Hurry Up ! The offer is limited. Grab while it lasts
+          </p>
+          <div className="bg-blue-600 w-full h-36 mt-2 rounded-md flex items-center justify-center gap-0 cursor-pointer text-white">
+            <div className="bg-[#0000001f] flex items-center justify-center rounded-sm px-4 py-3">
+              <p className="text-white font-semibold text-[1.6rem]">925</p>
+            </div>
+            <span className="">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 40"
+                fill="currentColor"
+              >
+                {[10, 30].map((y, i) => (
+                  <circle key={i} cx="12" cy={y} r="5" />
+                ))}
+              </svg>
+            </span>
+            <div className="bg-[#0000001f] flex items-center justify-center rounded-sm px-4 py-3">
+              <p className="text-white font-semibold text-[1.6rem]">12</p>
+            </div>
+            <span className="">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 40"
+                fill="currentColor"
+              >
+                {[10, 30].map((y, i) => (
+                  <circle key={i} cx="12" cy={y} r="5" />
+                ))}
+              </svg>
+            </span>
+            <div className="bg-[#0000001f] flex items-center justify-center rounded-sm px-4 py-3">
+              <p className="text-white font-semibold text-[1.6rem]">26</p>
+            </div>
+            <span className="">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 40"
+                fill="currentColor"
+              >
+                {[10, 30].map((y, i) => (
+                  <circle key={i} cx="12" cy={y} r="5" />
+                ))}
+              </svg>
+            </span>
+            <div className="bg-[#0000001f] flex items-center justify-center rounded-sm px-4 py-3">
+              <p className="text-white font-semibold text-[1.6rem]">40</p>
+            </div>
+          </div>
         </div>
 
         {/* Right Section */}
@@ -79,7 +135,7 @@ const FlashDealsSlider = () => (
                 <img
                   src={deal.imageUrl}
                   alt={deal.title}
-                  className="md:shadow md:rounded-md w-full"
+                  className="md:shadow md:rounded-md w-full transition-transform hover:scale-90  duration-300 cursor-pointer"
                 />
                 <div className="flex flex-col justify-center items-center md:items-start -mt-12 md:-mt-0">
                   <h3 className="text-sm font-medium text-black py-2 px-2">
