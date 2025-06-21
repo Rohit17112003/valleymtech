@@ -136,7 +136,8 @@ const FlashDealsSlider = () => (
     <Image
     src={deal.imageUrl}
     alt={deal.title}
-    fill
+    width={1000}
+    height={0}
     className="md:shadow md:rounded-md object-cover transition-transform hover:scale-90 duration-300 cursor-pointer"
   />
                 <div className="flex flex-col justify-center items-center md:items-start -mt-12 md:-mt-0">

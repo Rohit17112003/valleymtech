@@ -65,8 +65,8 @@ const ClearanceSale = () => (
          <Image
   src="/image/title.svg"
   alt="title"
-  width={160}    // adjust based on actual size or desired layout
-  height={80}
+  width={200}    // adjust based on actual size or desired layout
+  height={95}
   className="h-20"
 />
         </span>
@@ -96,15 +96,16 @@ const ClearanceSale = () => (
       >
         {deals.map((deal) => (
           <SwiperSlide key={deal.id}>
-            <div className="flex flex-col items-center gap-2 bg-white shadow-md mt-8 md:mt-0 shaodw-gray-300 rounded-md relative py-2">
+            <div className="flex flex-col items-center gap-2 bg-white mt-8 md:mt-0 border md:border-none  rounded-md relative py-2">
               <button className=" left-2 absolute z-50 bg-blue-500 text-white rounded-md px-2 py-1 text-[0.8rem]">
                 {deal.price}
               </button>
                <Image
     src={deal.imageUrl}
     alt={deal.title}
-    fill
-    className="object-cover transition-transform hover:scale-110 duration-500 cursor-pointer"
+    width={400}
+    height={0}
+    className="object-cover transition-transform  md:w-40 w-64 hover:scale-110 duration-500 cursor-pointer"
 />
               <div className="pb-2">
                 <h3 className="text-sm font-medium text-black py-2 px-2">
@@ -119,13 +120,14 @@ const ClearanceSale = () => (
         ))}
       </Swiper>
     </div>
-   <div className="relative w-full h-[300px] mb-10"> {/* You can change 400px to any height you need */}
+   <div className="relative w-full md:h-[300px] md:mb-8 my-4 md:my-0"> {/* You can change 400px to any height you need */}
   <Link href="https://codecanyon.net/item/6valley-multivendor-ecommerce-complete-ecommerce-mobile-app-web-and-admin-panel/31448597?s_rank=1">
     <Image
       src="/image/dive.webp"
       alt="dive"
-      fill
-      className="rounded-md md:mt-8 mt-0 mb-4 object-cover"
+      width={1450}
+      height={0}
+      className="rounded-md md:mt-8 mt-0 object-cover"
     />
   </Link>
 </div>

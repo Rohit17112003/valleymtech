@@ -48,16 +48,16 @@ const Categories = () => {
               View All <SlArrowRight className="text-[0.75rem]" />
             </p>
           </div>
-          <div className="flex flex-wrap flex-row px-4  justify-between  gap-10 ">
+          <div className="flex flex-wrap flex-row px-4  justify-between  md:gap-10 ">
             {data.map((items, index) => (
               <div key={index}>
-  <Image
-  src={items.img}
-  alt="items"
-  width={112}
-  height={112}
-  className="hover:scale-90 cursor-pointer transition-transform duration-300"
-/>
+                <Image
+                  src={items.img}
+                  alt="items"
+                  width={112}
+                  height={112}
+                  className="hover:scale-90 cursor-pointer transition-transform duration-300 md:w-28 w-full"
+                />
                 <h1 className="py-4">{items.titile}</h1>
               </div>
             ))}

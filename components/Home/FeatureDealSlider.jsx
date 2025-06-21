@@ -61,7 +61,7 @@ const deals = [
 
 const FeatureDealSlider = () => (
   <div className="px-1 md:px-12 md:py-4 -mt-7 md:-mt-0">
-    <div className="md:pb-6 bg-white md:bg-gray-100 md:shadow md:rounded-lg px-4 md:px-12">
+    <div className="md:pb-6 bg-white md:bg-gray-100 md:shadow md:rounded-md px-4 md:px-12">
       <div className="flex justify-between pt-5">
         <span>
           {" "}
@@ -92,21 +92,21 @@ const FeatureDealSlider = () => (
         }}
         navigation
         pagination={{ clickable: true }}
-        className="px-6 md:mt-4 mt-6"
+        className="px-6 md:mt-4 mt-6 rounded-md"
       >
         {deals.map((deal) => (
           <SwiperSlide key={deal.id}>
-            <div className="flex flex-row gap-2 bg-white shadow-md md:shadow shadow-gray-300 rounded-md relative px-6 py-2">
+            <div className="flex flex-row gap-2 bg-white border md:border-none rounded-md relative px-6 py-2">
               <button className=" left-2 absolute z-50 bg-blue-500 text-white rounded-md px-2 py-1 text-[0.8rem]">
                 {deal.price}
               </button>
-  <Image
-  src={deal.imageUrl}
-  alt={deal.title}
-  width={112}   // w-28 = 112px
-  height={112}  // adjust as needed
-  className="z-10 rounded-l-md transition-transform hover:scale-110 duration-500 cursor-pointer"
-/>
+              <Image
+                src={deal.imageUrl}
+                alt={deal.title}
+                width={112} // w-28 = 112px
+                height={112} // adjust as needed
+                className="z-10 rounded-md transition-transform hover:scale-110 duration-500 cursor-pointer"
+              />
               <div className="">
                 <h3 className="text-sm font-medium text-black py-2 px-2">
                   {deal.title}

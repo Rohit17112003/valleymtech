@@ -9,7 +9,7 @@ const Hero = () => {
           <Image
           src="/image/k (1).webp"
           alt="banner"
-          width={1200}
+          width={1450}
           height={400}
           priority
         />

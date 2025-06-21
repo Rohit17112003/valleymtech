@@ -60,8 +60,8 @@ export default function NavigationBar() {
           <Image
             src="/image/k (2).png"
             alt="header_logo"
-            width={100}
-            height={40}
+            width={121}
+            height={0}
             priority
             className="h-8 md:h-10"
           />
@@ -72,9 +72,9 @@ export default function NavigationBar() {
           <input
             type="text"
             placeholder="Search for items..."
-            className="flex-grow border border-gray-300 px-4 w-[200px] md:py-2.5 py-1.5 rounded-l-md outline-none text-blue-600"
+            className="flex-grow border border-gray-300 px-4 w-[200px] md:py-2.5 rounded-l-md outline-none text-blue-600"
           />
-          <button className="bg-[#1455ac] text-white mr-4 text-[1.15rem] md:text-[1.31rem] px-3 md:px-5 py-1.5 md:py-3 rounded-r-md">
+          <button className="bg-[#1455ac] text-white mr-4 text-[1.15rem] md:text-[1.31rem] px-3 md:px-5  md:py-3 rounded-r-md">
             <LuSearch />
           </button>
           {/* Hamburger Icon */}
