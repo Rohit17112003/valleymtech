@@ -144,11 +144,11 @@ const TopSellerSlider = () => (
                 </div>
               </div>
               <div className="flex justify-between items-center absolute bottom-5 px-4 gap-3 ">
-                <button className="bg-[#ffc0cb52] rounded-md text-sm md:text-[0.98rem] px-5 py-1 text-gray-500 hover:bg-[#00000023]">
+                <button className="bg-[#ffc0cb52] rounded-[3px] text-sm md:text-[0.98rem] px-5 py-1.5 text-gray-500 hover:bg-[#00000023]">
                   <span className="text-blue-800 md:text-[1.2rem] text-[1.1rem] pr-2">{deal.review}</span>
                   Reviews
                 </button>
-                <button className="bg-[#ffc0cb52] rounded-md text-sm md:text-[0.98rem] px-5 py-1 text-gray-500 hover:bg-[#00000023]">
+                <button className="bg-[#ffc0cb52] rounded-[3px] text-sm md:text-[0.98rem] px-5 py-1.5 text-gray-500 hover:bg-[#00000023]">
                   <span className="text-blue-800 md:text-[1.2rem] text-[1.1rem] pr-2">{deal.product}</span>
                   Products
                 </button>
