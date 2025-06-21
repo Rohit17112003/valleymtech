@@ -63,7 +63,7 @@ export default function NavigationBar() {
             width={121}
             height={0}
             priority
-            className="h-8 md:h-10"
+            className=" md:h-10"
           />
         </Link>
 
