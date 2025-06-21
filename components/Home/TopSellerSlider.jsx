@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
+import { MdStar } from "react-icons/md";
 
 const deals = [
   {
@@ -125,7 +126,7 @@ const TopSellerSlider = () => (
                 className=" transition-transform hover:scale-110 duration-500 cursor-pointer rounded-t-lg object-cover border-b"
               />
               <div>
-                <div className="w-[85px] h-[85px] rounded-full shadow absolute md:top-14 top-18 left-5 overflow-hidden">
+                <div className="w-[85px] h-[85px] rounded-full shadow absolute md:top-14 md:top-18 top-[84px] left-5 overflow-hidden">
                   <Image
                     src={deal.imageUr2}
                     alt={deal.title}
@@ -134,21 +135,21 @@ const TopSellerSlider = () => (
                     className=" transition-transform duration-500 hover:scale-125 cursor-pointer"
                   />
                 </div>
-                <div className="flex flex-col md:items-start items-center absolute left-28 leading-3">
+                <div className="flex flex-col md:items-start items-center absolute top-[105px] md:top-[80px] left-28 leading-3">
                   <h3 className="text-sm md:text-[1rem] font-bold text-gray-600 py-2 px-2">
                     {deal.title}
                   </h3>
-                  <p className="text-[0.9rem] text-pink-400 px-2 pb-10 md:pb-0">
-                    {deal.price}
+                  <p className="text-[0.9rem] text-blue-600 px-2 pb-10 md:pb-0 flex items-center gap-1">
+                    {deal.price} <span className="flex text-gray-500 items-center gap-1 text-[0.7rem]"><MdStar className=" text-yellow-600"/>Rating</span>
                   </p>
                 </div>
               </div>
               <div className="flex justify-between items-center absolute bottom-5 px-4 gap-3 ">
-                <button className="bg-[#ffc0cb52] rounded-[3px] text-sm md:text-[0.98rem] px-5 py-1.5 text-gray-500 hover:bg-[#00000023]">
+                <button className="bg-[#ffc0cb52] rounded-[3px] text-sm md:text-[0.98rem] px-5 md:py-1.5 py-2 text-gray-500 hover:bg-[#00000023]">
                   <span className="text-blue-800 md:text-[1.2rem] text-[1.1rem] pr-2">{deal.review}</span>
                   Reviews
                 </button>
-                <button className="bg-[#ffc0cb52] rounded-[3px] text-sm md:text-[0.98rem] px-5 py-1.5 text-gray-500 hover:bg-[#00000023]">
+                <button className="bg-[#ffc0cb52] rounded-[3px] text-sm md:text-[0.98rem] px-5 md:py-1.5 py-2 text-gray-500 hover:bg-[#00000023]">
                   <span className="text-blue-800 md:text-[1.2rem] text-[1.1rem] pr-2">{deal.product}</span>
                   Products
                 </button>
