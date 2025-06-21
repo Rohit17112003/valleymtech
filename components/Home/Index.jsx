@@ -5,6 +5,7 @@ import FeaturedSlider from "./FeaturedSlider";
 import Categories from "./Categories";
 import FeatureDealSlider from "./FeatureDealSlider";
 import ClearanceSale from "./ClearanceSale";
+import TopSellerSlider from "./TopSellerSlider";
 const MainHomePage = () => {
   const design = (
     <>
@@ -14,6 +15,7 @@ const MainHomePage = () => {
     <Categories/>
     <FeatureDealSlider/>
     <ClearanceSale/>
+    <TopSellerSlider/>
     </>
   );
   return design;
