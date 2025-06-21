@@ -7,6 +7,8 @@ import FeatureDealSlider from "./FeatureDealSlider";
 import ClearanceSale from "./ClearanceSale";
 import TopSellerSlider from "./TopSellerSlider";
 import LatestProduct from "./LatestProducts";
+import NewArrivals from "./NewArrivals";
+import BestSelling from "./BestSelling";
 const MainHomePage = () => {
   const design = (
     <>
@@ -18,6 +20,8 @@ const MainHomePage = () => {
     <ClearanceSale/>
     <TopSellerSlider/>
     <LatestProduct/>
+    <NewArrivals/>
+    <BestSelling/>
     </>
   );
   return design;

@@ -48,11 +48,11 @@ const LatestProduct = () => {
   return (
     <>
       <div className=" flex md:flex-row flex-col  md:justify-between md:px-12 pb-4 px-4  md:pb-8">
-        <div className="border md:border-blue-500 md:w-[450px] md:h-[588px] px-5 py-5">
+        <div className="border md:border-blue-500 md:w-[450px] md:h-[555px] md:px-5 md: px-3 py-3 md:py-5">
           <h1 className="text-blue-900 font-semibold text-center md:text-[1.1rem] text-[1rem] uppercase py-5">
             deal of the day
           </h1>
-          <div className="bg-white flex flex-col items-center px-5 py-5 rounded-[5px]  relative pb-14">
+          <div className="bg-white flex flex-col items-center md:px-5 px-3 md:py-5 py-3 rounded-[5px]  relative pb-14">
             <Image
               src="/Assets/pic (9).webp"
               alt="items"
@@ -66,7 +66,7 @@ const LatestProduct = () => {
               </button>
             </div>
 
-            <p className="text-[1rem] text-center font-semibold mt-4">
+            <p className="text-[1rem] text-center font-semibold px-8 md:px-0 mt-4">
             Exquisite 18K White Gold Diamond Necklace Set
           </p>
           <p className=" text-gray-900 font-semibold text-[1rem] text-center py-3">
