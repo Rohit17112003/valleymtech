@@ -1,19 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",       // agar aap app dir use kar rahe ho to
-    "./pages/**/*.{js,ts,jsx,tsx}",     // agar pages dir hai to
-    "./components/**/*.{js,ts,jsx,tsx}",// components ke liye
-    "./src/**/*.{js,ts,jsx,tsx}"        // agar src folder hai to
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      fontFamily: {
-        ubuntu: ["var(--font-ubuntu)", "sans-serif"],
-      },
       colors: {
-        background: "#fffaec",
-        foreground: "#171717",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
       },
     },
   },

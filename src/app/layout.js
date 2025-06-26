@@ -1,14 +1,13 @@
 import "./globals.css";
-import NavigationBar from "@/ui/Header/NavigationBar";
-import Footer from "@/ui/Footer/Footer";
+import NavigationBar from "../ui/Header/NavigationBar";
+import Footer from "../ui/Footer/Footer";
 import { Ubuntu } from "next/font/google";
 
-// Ubuntu font with CSS variable
+
 const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
-  variable: "--font-ubuntu", // This creates the CSS variable
-  display: "swap",
+  variable: "--font-ubuntu",
 });
 
 export const metadata = {

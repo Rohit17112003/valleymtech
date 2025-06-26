@@ -1,5 +1,5 @@
 import React from "react";
-import MainHomePage from "@/ui/Home/Index";
+import MainHomePage from "../ui/Home/Index";
 const page = () => {
   return (
     <>
